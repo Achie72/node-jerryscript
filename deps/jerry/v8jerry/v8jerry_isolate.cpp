@@ -12,6 +12,7 @@
 #include "v8jerry_flags.hpp"
 #include "v8jerry_templates.hpp"
 #include "v8jerry_utils.hpp"
+#include "v8jerry_webassembly.hpp"
 
 #define DEBUG_PRINT 1
 
@@ -151,6 +152,7 @@ void JerryIsolate::InitializeJerryIsolate(const v8::Isolate::CreateParams& param
 
     InitalizeSlots();
     JerryAtomics::Initialize();
+    JerryWebAssembly::Initialize();
 
     m_magic_string_stack = new JerryValue(jerry_create_string((const jerry_char_t*) "stack"));
     m_last_try_catch = NULL;

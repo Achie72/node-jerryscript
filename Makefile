@@ -142,7 +142,7 @@ test-code-cache: with-code-cache
 
 out/Makefile: config.gypi common.gypi node.gyp \
 	deps/uv/uv.gyp deps/llhttp/llhttp.gyp deps/zlib/zlib.gyp \
-	deps/jerry/jerryscript.gyp
+	deps/jerry/jerryscript.gyp deps/jerry/wabt/wabt.gyp
 	$(PYTHON) tools/gyp_node.py -f make
 
 # node_version.h is listed because the N-API version is taken from there

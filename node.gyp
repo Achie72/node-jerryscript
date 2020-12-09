@@ -345,6 +345,7 @@
       'dependencies': [
         'deps/histogram/histogram.gyp:histogram',
         'deps/uvwasi/uvwasi.gyp:uvwasi',
+        'deps/jerry/wabt/wabt.gyp:wabt',
       ],
 
       'msvs_settings': {
@@ -720,6 +721,7 @@
         'src/util-inl.h',
         # Dependency headers
         'deps/jerry/include/v8.h',
+        'deps/jerry/include/wasm.h',
         # javascript files to make for an even more pleasant IDE experience
         '<@(library_files)',
         # node.gyp is added by default, common.gypi is added for change detection

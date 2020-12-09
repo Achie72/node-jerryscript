@@ -361,5 +361,8 @@
     }],
 
   ],
-  'dependencies': [ 'deps/jerry/jerryscript.gyp:jerryapi' ],
+  'dependencies': [
+    'deps/jerry/jerryscript.gyp:jerryapi',
+    'deps/jerry/wabt/wabt.gyp:wabt',
+ ],
 }

@@ -38,6 +38,7 @@
         'jerryscript.gyp:jerrysource',
          '<(icu_gyp_path):icui18n',
          '<(icu_gyp_path):icuuc',
+          'wabt/wabt.gyp:wabt'
       ],
       'include_dirs': [
          'include',
@@ -86,11 +87,14 @@
         'v8jerry/v8jerry_utils.hpp',
         'v8jerry/v8jerry_value.cpp',
         'v8jerry/v8jerry_value.hpp',
+        'v8jerry/v8jerry_webassembly.cpp',
+        'v8jerry/v8jerry_webassembly.hpp',
 
         'jerryscript/jerry-ext/debugger/debugger-common.c',
         'jerryscript/jerry-ext/debugger/debugger-sha1.c',
         'jerryscript/jerry-ext/debugger/debugger-tcp.c',
         'jerryscript/jerry-ext/debugger/debugger-ws.c',
+
       ],
       'direct_dependent_settings': {
         'include_dirs': [

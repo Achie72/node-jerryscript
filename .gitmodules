@@ -1,3 +1,6 @@
 [submodule "deps/jerry/jerryscript"]
 	path = deps/jerry/jerryscript
 	url = https://github.com/jerryscript-project/jerryscript
+[submodule "deps/jerry/wabt"]
+	path = deps/jerry/wabt
+	url = https://github.com/WebAssembly/wabt.git

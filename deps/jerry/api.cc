@@ -24,6 +24,7 @@
 #include "v8jerry_serialize.hpp"
 #include "v8jerry_templates.hpp"
 #include "v8jerry_value.hpp"
+#include "v8jerry_webassembly.hpp"
 
 // /* Remove the comments to enable trace macros */
 // #define USE_TRACE
