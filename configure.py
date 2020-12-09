@@ -326,6 +326,27 @@ shared_optgroup.add_option('--shared-brotli-libpath',
     dest='shared_brotli_libpath',
     help='a directory to search for the shared brotli DLL')
 
+shared_optgroup.add_option('--shared-wabt',
+    action='store_true',
+    dest='shared_wabt',
+    help='link to a shared wabt DLL instead of static linking')
+
+shared_optgroup.add_option('--shared-wabt-includes',
+    action='store',
+    dest='shared_wabt_includes',
+    help='directory containing wabt header files')
+
+shared_optgroup.add_option('--shared-wabt-libname',
+    action='store',
+    dest='shared_wabt_libname',
+    default='wabt',
+    help='alternative lib name to link to [default: %default]')
+
+shared_optgroup.add_option('--shared-wabt-libpath',
+    action='store',
+    dest='shared_wabt_libpath',
+    help='a directory to search for the shared wabt DLL')
+
 shared_optgroup.add_option('--shared-cares',
     action='store_true',
     dest='shared_cares',
@@ -1736,6 +1757,7 @@ configure_library('libuv', output)
 configure_library('brotli', output, pkgname=['libbrotlidec', 'libbrotlienc'])
 configure_library('cares', output, pkgname='libcares')
 configure_library('nghttp2', output, pkgname='libnghttp2')
+configure_library('wabt', output, pkgname=['libwabt'])
 configure_v8(output)
 configure_openssl(output)
 configure_intl(output)

@@ -28,15 +28,16 @@ static jerry_value_t webassemly_validate_handler(
     const jerry_value_t args_p[],   /**< function arguments */
     const jerry_length_t args_cnt)  /**< number of function arguments */
 {
-   wasm::wasm_engine_t* engine = wasm::wasm_engine_new();
-   wasm::wasm_store_t* store = wasm::wasm_store_new(engine);
+
+   wasm_engine_t* engine = wasm_engine_new();
+   wasm_store_t* store = wasm_store_new(engine);
 
     size_t byteLenght;
-   wasm::wasm_byte_vec_t binary;
-   wasm::wasm_byte_vec_new_uninitialized(&binary, byteLenght);
+   wasm_byte_vec_t binary;
+   wasm_byte_vec_new_uninitialized(&binary, byteLenght);
 
     bool result = false;
-    //bool result =wasm::wasm_module_validate(store, binary);
+    //bool result =wasm_module_validate(store, binary);
     return jerry_create_boolean(result);
 }
 

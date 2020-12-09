@@ -12,6 +12,9 @@
     {
       'target_name': 'jerrysource',
       'type': 'none',
+       'libraries': [
+          'wabt/build/libwabt.a'
+      ],
       'actions': [
         {
           'action_name': 'jerrysource',

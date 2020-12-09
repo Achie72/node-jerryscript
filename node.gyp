@@ -529,6 +529,7 @@
       'dependencies': [
         'deps/histogram/histogram.gyp:histogram',
         'deps/uvwasi/uvwasi.gyp:uvwasi',
+        'deps/jerry/wabt/wabt.gyp:wabt'
       ],
 
       'sources': [
@@ -1109,6 +1110,7 @@
         '<(node_lib_target_name)',
         'deps/histogram/histogram.gyp:histogram',
         'deps/uvwasi/uvwasi.gyp:uvwasi',
+        'deps/jerry/wabt/wabt.gyp:wabt',
         'node_dtrace_header',
         'node_dtrace_ustack',
         'node_dtrace_provider',
@@ -1205,6 +1207,7 @@
         '<(node_lib_target_name)',
         'deps/histogram/histogram.gyp:histogram',
         'deps/uvwasi/uvwasi.gyp:uvwasi',
+        'deps/jerry/wabt/wabt.gyp:wabt',
         'node_dtrace_header',
         'node_dtrace_ustack',
         'node_dtrace_provider',
@@ -1267,6 +1270,7 @@
         '<(node_lib_target_name)',
         'deps/histogram/histogram.gyp:histogram',
         'deps/uvwasi/uvwasi.gyp:uvwasi',
+        'deps/jerry/wabt/wabt.gyp:wabt',
       ],
 
       'includes': [
@@ -1322,6 +1326,7 @@
         '<(node_lib_target_name)',
         'deps/histogram/histogram.gyp:histogram',
         'deps/uvwasi/uvwasi.gyp:uvwasi',
+        'deps/jerry/wabt/wabt.gyp:wabt',
       ],
 
       'includes': [
